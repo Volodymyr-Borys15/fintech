@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'fin-signup',
+  selector: 'ft-signup',
   standalone: true,
   imports: [],
   templateUrl: './signup.component.html',

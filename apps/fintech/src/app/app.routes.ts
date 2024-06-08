@@ -5,5 +5,5 @@ export const appRoutes: Route[] = [
     path: '',
     loadChildren: () => import('@fintech/auth').then((m) => m.authRoutes),
   },
-  // { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
 ];

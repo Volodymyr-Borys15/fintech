@@ -3,12 +3,11 @@ import { RouterModule } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { CommonModule } from '@angular/common';
-import { AuthComponent } from '@fintech/auth';
 
 @Component({
   standalone: true,
-  imports: [RouterModule, HttpClientModule, CommonModule, AuthComponent],
-  selector: 'app-root',
+  imports: [RouterModule, HttpClientModule, CommonModule],
+  selector: 'ft-root',
   template: `
     {{ (backend$ | async)?.message }}
     <router-outlet></router-outlet>

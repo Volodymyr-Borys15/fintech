@@ -2,7 +2,7 @@
   "name": "fintech",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "app",
+  "prefix": "ft",
   "sourceRoot": "apps/fintech/src",
   "tags": [],
   "targets": {
