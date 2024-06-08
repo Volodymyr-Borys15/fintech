@@ -1,13 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'fin-auth',
+  selector: 'ft-auth',
   standalone: true,
-  imports: [CommonModule, RouterModule],
-  templateUrl: './auth.component.html',
-  styleUrl: './auth.component.scss',
+  imports: [CommonModule, RouterOutlet],
+ template: `<router-outlet></router-outlet>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AuthComponent {}
